@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    @font-face {
+        font-family: MontrealBook;
+        src: url(./assets/fonts/PPNeueMontreal-Book.woff2);
+    }
+    @font-face {
+        font-family: MontrealRegular;
+        src: url(./assets/fonts/PPNeueMontreal-Regular.woff2);
+    }
+    @font-face {
+        font-family: MontrealThin;
+        src: url(./assets/fonts/PPNeueMontreal-Thin.woff2);
+    }
+}
