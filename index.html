@@ -10,14 +10,51 @@
     <link rel="stylesheet" href="./output.css">
     <title>GSAP</title>
 </head>
-<body>
-    <div id="root">
+<body class="grid grid-cols-12">
+    <div class=' col-span-10 col-start-2 font-regular pb-60' id="root">
+
+        <header class="flex items-center justify-between py-6">
+            <img class="h-4" src="./assets/logo.svg" alt="plasticLogo">
+            <p class="text-xxs font-bold">DIGITAL SOUL © 2022</p>
+            <button class="text-xxs font-semibold p-1 px-4 border-2 rounded-2xl border-black">Let's talk</button>
+        </header>
         
+        <div class="flex justify-center">
+            <h1 class="w-4/5 my-40 uppercase font-medium text-6xl text-center">we transform ideas into digital outcomes</h1>
+        </div>
+
+        <div class="space-y-8 pb-40">
+            <div>
+                <video src="https://plastic.design/uploads/services/branding.mp4" autoplay loop></video>
+            </div>
+            <p class="w-4/6 text-2xl font-bold font-book">
+                We are an award-winning strategic design company that
+                provides consultancy services worldwide. Our team consists 
+                of a superb blend of thinkers, strategists,designers,researchers
+                developers and organisers. Not too big, not too small, quite sensible
+                and completely independent.
+            </p>
+
+        </div>
+
+        <div class="grid grid-cols-10 border-t-[1px] border-black">
+            <p class="text-3xl font-bold font-book uppercase pt-8">Our Services.</p>
+            <div class="col-start-4 col-span-6">
+                <div class="flex flex-row font-bold pt-8">
+                    <p class="text-base basis-1/2">01. Strategy and consultancy.</p>
+                    <p class="text-xs basis-1/2">Because we have a global vision, we can see the project as a whole.
+                        This enables us to understand its needs, identify opportunities,
+                        define and map processes, and effectively to guide each stage of the 
+                        project to deliver the best results.
+                    </p>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
 
     </div>
-
-
-
     
 </body>
 </html>

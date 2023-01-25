@@ -8,8 +8,8 @@ module.exports = {
         book: "MontrealBook,sans-serif",
         mthin: "MontrealThin,sans-serif",
       },
-      colors : {
-        
+      fontSize : {
+        xxs : ['.625rem', {lineHeight: '1rem'}]
       }
     },
   },
