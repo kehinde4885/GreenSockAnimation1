@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./output.css">
     <title>GSAP</title>
 </head>
-<body class="grid grid-cols-12">
+<body class="grid grid-cols-12 bg-black text-white">
     <div class=' col-span-10 col-start-2 font-regular pb-60' id="root">
 
         <header class="flex items-center justify-between py-6">
@@ -25,7 +25,7 @@
 
         <div class="space-y-8 pb-40">
             <div>
-                <video src="https://plastic.design/uploads/services/branding.mp4" autoplay loop></video>
+                <video src="https://plastic.design/uploads/services/branding.mp4" autoplay mute loop></video>
             </div>
             <p class="w-4/6 text-2xl font-bold font-book">
                 We are an award-winning strategic design company that
@@ -38,9 +38,9 @@
         </div>
 
         <div class="grid grid-cols-10 border-t-[1px] border-black">
-            <p class="text-3xl font-bold font-book uppercase pt-8">Our Services.</p>
-            <div class="col-start-4 col-span-6">
-                <div class="flex flex-row font-bold pt-8">
+            <p class="col-span-2 text-3xl font-bold font-book uppercase pt-8">Our Services.</p>
+            <div class="col-start-5 col-span-6 grid auto-rows-fr">
+                <div class="flex flex-row py-8">
                     <p class="text-base basis-1/2">01. Strategy and consultancy.</p>
                     <p class="text-xs basis-1/2">Because we have a global vision, we can see the project as a whole.
                         This enables us to understand its needs, identify opportunities,
@@ -48,13 +48,83 @@
                         project to deliver the best results.
                     </p>
                 </div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div class="flex flex-row py-8 border-t-[1px] border-black">
+                    <p class="text-base basis-1/2">02. Digital Products.</p>
+                    <p class="text-xs basis-1/2">Digital products are the apps,tools,sites and 
+                        systems that you use to watch,buy,create, control and manage things digitally.
+                        We help you create outstanding digital products that meet your objectives
+                        and make the world a better place for your users.
+                    </p>
+                </div>
+                <div class="flex flex-row py-8 border-t-[1px] border-black">
+                    <p class="text-base basis-1/2">03. Digital-first branding.</p>
+                    <p class="text-xs basis-1/2">We define and create digital brands with soul that transmit those 
+                        intangible values that make the brand recognisable and remembered in many different ways.       
+                    </p>
+                </div>
+                <div class="flex flex-row  py-8 border-t-[1px] border-black">
+                    <p class="text-base basis-1/2">04. Technology.</p>
+                    <p class="text-xs basis-1/2">The base for a successful outcome is also defining the technological strategy. 
+                        Analysing the project and its needs in depth helps us to choose the most suitable and efficient technology for each project. 
+                                       
+                    </p>
+                </div>
             </div>
+        </div>
+
+
+        <div class="uppercase space-y-4 mt-40">
+            <p class="text-xxs">clients</p>
+            <div class="flex flex-col justify-between font-book leading-none">
+                <div class="flex justify-between">
+                    <p class="text-[55px]">Siemens.</p>
+                    <p class="text-[55px]">BBVA.</p>
+                    <p class="text-[55px]">iberia.</p>
+                </div>
+                <div class="flex justify-between">
+                    <p class="text-[55px]">iota.</p>
+                    <p class="text-[55px]">nike.</p>
+                    <p class="text-[55px]">massimo</p>
+                </div>
+                <div class="flex justify-between">
+                    <p class="text-[55px]">dutti.</p>
+                    <p class="text-[55px]">johnson</p>
+                </div>
+                <div class="flex justify-between">
+                    <p class="text-[55px]">controls</p>
+                    <p class="text-[55px]">hitachi.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="grid grid-cols-10 border-y-[1px]">
+            <div class="col-span-3">
+                <p class="col-span-2 text-3xl font-book uppercase">Selected Work.</p>
+            </div>
+            <div class="grid auto-cols-auto grid-flow-col col-span-7">
+
+                <div class="flex flex-col">
+                    <div class="">
+                        <img class='' src="./assets/hitachi-brand_p.svg" alt="">
+                    </div>
+                    <p>Hitachi Digital Brand Ecosystem</p>
+                </div>
+                
+                <div class="flex flex-col">
+                    <div class="">
+                        <img class='max-w-[100%] object-scale-down' src="./assets/strabe_l_1024_2x.jpg" alt="">
+                    </div>
+                    <p>Hitachi Digital Brand Ecosystem</p>
+                </div>
+                
+
+            </div>
+
         </div>
 
     </div>
     
 </body>
+<script src="./index.js" type="module"></script>
 </html>
