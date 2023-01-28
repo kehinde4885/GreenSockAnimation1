@@ -11,7 +11,7 @@
     <title>GSAP</title>
 </head>
 <body class="grid grid-cols-12 bg-black text-white">
-    <div class=' col-span-10 col-start-2 font-regular pb-60' id="root">
+    <div class=' col-span-10 col-start-2 font-regular pb-24' id="root">
 
         <header class="flex items-center justify-between py-6">
             <img class="h-4" src="./assets/logo.svg" alt="plasticLogo">
@@ -25,7 +25,7 @@
 
         <div class="space-y-8 pb-40">
             <div>
-                <video src="https://plastic.design/uploads/services/branding.mp4" autoplay mute loop></video>
+                <video src="https://plastic.design/uploads/services/digital_branding.mp4" autoplay loop  mute ></video>
             </div>
             <p class="w-4/6 text-2xl font-bold font-book">
                 We are an award-winning strategic design company that
@@ -72,7 +72,6 @@
             </div>
         </div>
 
-
         <div class="uppercase space-y-4 mt-40">
             <p class="text-xxs">clients</p>
             <div class="flex flex-col justify-between font-book leading-none">
@@ -98,28 +97,63 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-10 border-y-[1px]">
-            <div class="col-span-3">
+        <div class="grid grid-cols-10 border-y-[1px] overflow-x-hidden mt-48">
+            <div class="flex flex-col justify-between col-span-3 py-8">
                 <p class="col-span-2 text-3xl font-book uppercase">Selected Work.</p>
+                <div class="flex space-x-2">
+                    <span class="border-2 rounded-lg p-2">
+                        <img src="./assets/arrow-left.svg" alt="">
+                    </span>
+                    <span class="border-2 rounded-lg p-2">
+                        <img src="./assets/arrow-left.svg" alt="">
+                    </span>
+                </div>
             </div>
-            <div class="grid auto-cols-auto grid-flow-col col-span-7">
+            <div class="grid grid-flow-col auto-cols-[350px] gap-x-8 pl-8 pt-8 col-span-7 border-l-[1px]">
 
-                <div class="flex flex-col">
-                    <div class="">
-                        <img class='' src="./assets/hitachi-brand_p.svg" alt="">
-                    </div>
+                <div class="">
+                    <img class='' src="./assets/hitachi-brand_p.svg" alt="">
                     <p>Hitachi Digital Brand Ecosystem</p>
                 </div>
-                
-                <div class="flex flex-col">
-                    <div class="">
-                        <img class='max-w-[100%] object-scale-down' src="./assets/strabe_l_1024_2x.jpg" alt="">
-                    </div>
+
+                <div class="">
+                    <img class='' src="./assets/hitachi-brand_p.svg" alt="">
                     <p>Hitachi Digital Brand Ecosystem</p>
                 </div>
-                
+                <div class="">
+                    <img class='' src="./assets/hitachi-brand_p.svg" alt="">
+                    <p>Hitachi Digital Brand Ecosystem</p>
+                </div>
+                <div class="">
+                    <img class='' src="./assets/hitachi-brand_p.svg" alt="">
+                    <p>Hitachi Digital Brand Ecosystem</p>
+                </div>
 
+                
             </div>
+
+        </div>
+
+        <div class="mt-60">
+            <div class="text-8xl font-book">
+                <span class="">Let's talk.</span>
+                <span>↘</span>
+            </div>
+            <div class="flex space-x-8 uppercase text-xxs font-book mt-20">
+                <ul>
+                    <li>Behance</li>
+                    <li>instagram</li>
+                    <li>linkedin</li>
+                    <li>medium</li>
+                    <li>twitter</li>
+                </ul>
+                <ul class="self-end">
+                    <li>Privacy Policy</li>
+                    <li>Cookies Policy</li>
+                    <li>Terms & conditions</li>
+                </ul>
+            </div>
+            <p class="mt-10 text-xs font-medium">©2022 Plastic. All rights reserved</p>
 
         </div>
 
