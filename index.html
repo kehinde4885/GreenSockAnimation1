@@ -10,22 +10,26 @@
     <link rel="stylesheet" href="./output.css">
     <title>GSAP</title>
 </head>
-<body class="grid grid-cols-12 bg-black text-white">
+<body class="grid grid-cols-12 bg-white text-black">
     <div class=' col-span-10 col-start-2 font-regular pb-24' id="root">
 
-        <header class="flex items-center justify-between py-6">
+        <header id='header' class="flex items-center justify-between py-6">
             <img class="h-4" src="./assets/logo.svg" alt="plasticLogo">
             <p class="text-xxs font-bold">DIGITAL SOUL © 2022</p>
             <button class="text-xxs font-semibold p-1 px-4 border-2 rounded-2xl border-black">Let's talk</button>
         </header>
         
-        <div class="flex justify-center">
-            <h1 class="w-4/5 my-40 uppercase font-medium text-6xl text-center">we transform ideas into digital outcomes</h1>
+        <div id="anim-text-container" class="flex justify-center mt-40">
+            <h1 id="" class="w-4/5 my-40 uppercase font-medium text-6xl">
+                <p class="overflow-hidden flex justify-center"><span class="anim-text">we transform </span></p>
+                <p class="overflow-hidden flex justify-center"><span class="anim-text">ideas into digital</span></p>
+                <p class="overflow-hidden flex justify-center"><span class="anim-text">outcomes</span></p>
+            </h1>
         </div>
 
         <div class="space-y-8 pb-40">
             <div>
-                <video src="https://plastic.design/uploads/services/digital_branding.mp4" autoplay loop  mute ></video>
+                <video src="https://plastic.design/uploads/services/digital_branding.mp4" autoplay loop muted></video>
             </div>
             <p class="w-4/6 text-2xl font-bold font-book">
                 We are an award-winning strategic design company that
@@ -37,9 +41,10 @@
 
         </div>
 
-        <div class="grid grid-cols-10 border-t-[1px] border-black">
-            <p class="col-span-2 text-3xl font-bold font-book uppercase pt-8">Our Services.</p>
-            <div class="col-start-5 col-span-6 grid auto-rows-fr">
+
+        <div class="borderChange grid grid-cols-10 border-t-[1px] border-black pb-8">
+            <p class="title col-span-2 self-start text-3xl font-bold font-book uppercase pt-8">Our Services.</p>
+            <div class="col-start-5 col-span-6 grid grid-rows-[1fr,1fr,1fr,auto] font-bold">
                 <div class="flex flex-row py-8">
                     <p class="text-base basis-1/2">01. Strategy and consultancy.</p>
                     <p class="text-xs basis-1/2">Because we have a global vision, we can see the project as a whole.
@@ -48,7 +53,7 @@
                         project to deliver the best results.
                     </p>
                 </div>
-                <div class="flex flex-row py-8 border-t-[1px] border-black">
+                <div class="borderChange service flex flex-row py-8 opacity-30 border-t-[1px] border-black">
                     <p class="text-base basis-1/2">02. Digital Products.</p>
                     <p class="text-xs basis-1/2">Digital products are the apps,tools,sites and 
                         systems that you use to watch,buy,create, control and manage things digitally.
@@ -56,38 +61,37 @@
                         and make the world a better place for your users.
                     </p>
                 </div>
-                <div class="flex flex-row py-8 border-t-[1px] border-black">
+                <div class="borderChange service flex flex-row py-8 opacity-30  border-t-[1px] border-black">
                     <p class="text-base basis-1/2">03. Digital-first branding.</p>
                     <p class="text-xs basis-1/2">We define and create digital brands with soul that transmit those 
                         intangible values that make the brand recognisable and remembered in many different ways.       
                     </p>
                 </div>
-                <div class="flex flex-row  py-8 border-t-[1px] border-black">
+                <div class="borderChange service-trigger service flex flex-row  pt-8 opacity-30  border-t-[1px] border-black h-min">
                     <p class="text-base basis-1/2">04. Technology.</p>
                     <p class="text-xs basis-1/2">The base for a successful outcome is also defining the technological strategy. 
-                        Analysing the project and its needs in depth helps us to choose the most suitable and efficient technology for each project. 
-                                       
+                        Analysing the project and its needs in depth helps us to choose the most suitable and efficient technology for each project.           
                     </p>
                 </div>
             </div>
         </div>
 
-        <div class="uppercase space-y-4 mt-40">
+        <div class="client-container uppercase space-y-4 mt-40">
             <p class="text-xxs">clients</p>
             <div class="flex flex-col justify-between font-book leading-none">
-                <div class="flex justify-between">
-                    <p class="text-[55px]">Siemens.</p>
-                    <p class="text-[55px]">BBVA.</p>
-                    <p class="text-[55px]">iberia.</p>
+                <div class="flex ">
+                    <p class="text-[55px] ">Siemens.</p>
+                    <p class="client text-[55px] text-center">BBVA.</p>
+                    <p class="text-[55px] ">iberia.</p>
                 </div>
-                <div class="flex justify-between">
+                <div class="flex">
                     <p class="text-[55px]">iota.</p>
-                    <p class="text-[55px]">nike.</p>
+                    <p class="client text-[55px] text-center">nike.</p>
                     <p class="text-[55px]">massimo</p>
                 </div>
-                <div class="flex justify-between">
+                <div class="flex">
                     <p class="text-[55px]">dutti.</p>
-                    <p class="text-[55px]">johnson</p>
+                    <p class="client text-[55px] text-right">johnson</p>
                 </div>
                 <div class="flex justify-between">
                     <p class="text-[55px]">controls</p>
@@ -160,5 +164,7 @@
     </div>
     
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 <script src="./index.js" type="module"></script>
 </html>
